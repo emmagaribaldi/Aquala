@@ -10,7 +10,17 @@ const Productos = ({ agregarAlCarrito }) => {
     fetch('/api/productos')
       .then((res) => res.json())
       .then((data) => {
-        setProductos(data)
+        if (Array.isArray(data)) {
+          setProductos(data)
+        } else {
+          console.error('Error al cargar productos:', data)
+          setProductos([])
+        }
+        setCargando(false)
+      })
+      .catch((err) => {
+        console.error('Error de red:', err)
+        setProductos([])
         setCargando(false)
       })
   }, [])
@@ -24,6 +34,8 @@ const Productos = ({ agregarAlCarrito }) => {
   const formatearPrecio = (precio) => `$${precio.toLocaleString('es-AR')}`
 
   if (cargando) return <p style={{ textAlign: 'center' }}>Cargando productos...</p>
+
+  if (productos.length === 0) return <p style={{ textAlign: 'center' }}>No hay productos disponibles.</p>
 
   return (
     <section id="productos" aria-label="Catálogo de productos">
