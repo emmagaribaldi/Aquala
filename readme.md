@@ -168,8 +168,9 @@ Funcionalidades:
 ## 🧪 Testing con Sandbox de Mercado Pago
 
 **Cuenta compradora de prueba:**
-- Usuario: `TESTUSER5179115197534515569`
-- Contraseña: `u7Wndb2ANL`
+- Usuario: `TESTUSER7442435319000919767`
+- Contraseña: `LOlyJVgkti`
+- Código de verificación: `642768`
 
 **Tarjeta de prueba (pago aprobado):**
 
