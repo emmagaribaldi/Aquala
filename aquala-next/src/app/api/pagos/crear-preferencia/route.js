@@ -37,15 +37,15 @@ export async function POST(request) {
         email: orden.email,
       },
       back_urls: {
-        success: 'http://localhost:3000/pago-completado',
-        failure: 'http://localhost:3000/pago-fallido',
-        pending: 'http://localhost:3000/pago-pendiente',
+        success: 'https://aquala-jade.vercel.app/pago-completado',
+        failure: 'https://aquala-jade.vercel.app/pago-fallido',
+        pending: 'https://aquala-jade.vercel.app/pago-pendiente',
       },
       external_reference: `orden_${orden.id}`,
       metadata: {
         orden_id: orden.id,
       },
-      notification_url: 'https://9013-2800-2130-5200-632a-74d2-59a-97a4-1562.ngrok-free.app/api/pagos/webhook',
+      notification_url: 'https://aquala-jade.vercel.app/api/pagos/webhook',
     }
   })
 
