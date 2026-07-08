@@ -41,6 +41,7 @@ export async function POST(request) {
         failure: 'https://aquala-jade.vercel.app/pago-fallido',
         pending: 'https://aquala-jade.vercel.app/pago-pendiente',
       },
+      auto_return: 'approved',
       external_reference: `orden_${orden.id}`,
       metadata: {
         orden_id: orden.id,
