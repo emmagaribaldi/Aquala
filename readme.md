@@ -168,9 +168,9 @@ Funcionalidades:
 ## 🧪 Testing con Sandbox de Mercado Pago
 
 **Cuenta compradora de prueba:**
-- Usuario: `TESTUSER7442435319000919767`
-- Contraseña: `LOlyJVgkti`
-- Código de verificación: `642768`
+- Usuario: `TESTUSER5179115197534515569`
+- Contraseña: `u7Wndb2ANL`
+- Código de verificación: `025988`
 
 **Tarjeta de prueba (pago aprobado):**
 
@@ -181,6 +181,14 @@ Funcionalidades:
 | CVV | 123 |
 | Nombre | APRO |
 | DNI | 12345678 |
+
+**Tarjeta de prueba (pago rechazado):**
+
+Mismos datos que arriba pero con **Nombre: `OTHE`**
+
+**Tarjeta de prueba (pago pendiente):**
+
+Mismos datos que arriba pero con **Nombre: `CONT`**
 
 ---
 
